@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="weather-container">
+        <h1>Weather Application</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="weather-info">
+            <h2 id="city-name">City Name</h2>
+            <div class="weather-details">
+                <div class="temperature">
+                    <span id="temperature">--</span>°C
+                </div>
+                <div class="description" id="weather-description">Weather Description</div>
+                <img id="weather-icon" src="" alt="Weather Icon">
+            </div>
+            <div class="additional-info">
+                <p>Humidity: <span id="humidity">--</span>%</p>
+                <p>Wind Speed: <span id="wind-speed">--</span> km/h</p>
+            </div>
+        </div>
+    </div>
+    <div id="notification" class="notification">
+        <p>Weather data updated successfully!</p>
+    </div>
+    <!-- Add this div for the mouse follower -->
+    <div class="mouse-follower"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
